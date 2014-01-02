@@ -2,7 +2,7 @@
 
 source $OPENSHIFT_CARTRIDGE_SDK_BASH
 
-if output=$(curl http://$OPENSHIFT_DIY_IP:$OPENSHIFT_DIY_PORT 2>&1)
+if output=$(curl http://$OPENSHIFT_ORS_IP:$OPENSHIFT_ORS_PORT 2>&1)
 then
   client_result "Application is running"
 else

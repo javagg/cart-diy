@@ -9,8 +9,6 @@ locked_files:
 - metadata/
 - env/
 - env/*
-- hooks/
-- hooks/*
 - tmp/
 - conf/
 processed_templates:

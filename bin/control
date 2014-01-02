@@ -12,12 +12,12 @@ function run_hook() {
 }
 
 function start() {
-    echo "Starting DIY cartridge"
+    echo "Starting ORS cartridge"
     run_hook start
 }
 
 function stop() {
-    echo "Stopping DIY cartridge"
+    echo "Stopping ORS cartridge"
     run_hook stop
 }
 
@@ -30,24 +30,16 @@ function status() {
   run_hook status
 }
 
-#function status1() {
-#   if output=$(curl http://$OPENSHIFT_DIY_IP:$OPENSHIFT_DIY_PORT 2>&1 )
-#   then
-#      client_result "Application is running"
-#   else
-#      client_result "Application is either stopped or inaccessible"
-#   fi
-#}
-
 function reload() {
-    client_result "Reloading DIY cart"
+    client_result "Reloading ORS cart"
     restart
 }
 
 function tidy() {
-  client_message "Emptying log dir: $OPENSHIFT_DIY_LOG_DIR"
+  client_message "Emptying log dir: $OPENSHIFT_ORS_LOG_DIR and $OPENSHIFT_ORS_RUN_DIR"
   shopt -s dotglob
-  rm -rf $OPENSHIFT_DIY_LOG_DIR/*
+  rm -rf $OPENSHIFT_ORS_LOG_DIR/*
+  rm -rf $OPENSHIFT_ORS_RUN_DIR/*
 }
 
 case "$1" in

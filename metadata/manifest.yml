@@ -1,12 +1,12 @@
 ---
-Name: diy
-Cartridge-Short-Name: DIY
+Name: ors
+Cartridge-Short-Name: ORS
 Display-Name: Do-It-Yourself for ORS
 Description: The ORS application type is a blank slate for trying
   unsupported languages, frameworks, and middleware on OpenShift. See the community
   site for examples of bringing your favorite framework to OpenShift.
 Version: '0.1'
-Source-Url: https://github.com/javagg/cart-diy.git
+Source-Url: https://github.com/javagg/cart-ors.git
 License: ASL 2.0
 License-Url: http://www.apache.org/licenses/LICENSE-2.0.txt
 Cartridge-Version: 0.0.1
@@ -16,8 +16,8 @@ Categories:
 - experimental
 Website: 
 Provides:
-- diy-0.1
-- diy
+- ors-2.2.0
+- ors
 Publishes:
 Subscribes:
   set-env:
