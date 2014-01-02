@@ -30,14 +30,14 @@ function status() {
   run_hook status
 }
 
-function status1() {
-   if output=$(curl http://$OPENSHIFT_DIY_IP:$OPENSHIFT_DIY_PORT 2>&1 )
-   then
-      client_result "Application is running"
-   else
-      client_result "Application is either stopped or inaccessible"
-   fi
-}
+#function status1() {
+#   if output=$(curl http://$OPENSHIFT_DIY_IP:$OPENSHIFT_DIY_PORT 2>&1 )
+#   then
+#      client_result "Application is running"
+#   else
+#      client_result "Application is either stopped or inaccessible"
+#   fi
+#}
 
 function reload() {
     client_result "Reloading DIY cart"

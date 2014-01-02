@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source $OPENSHIFT_CARTRIDGE_SDK_BASH
+
 if output=$(curl http://$OPENSHIFT_DIY_IP:$OPENSHIFT_DIY_PORT 2>&1)
 then
   client_result "Application is running"
